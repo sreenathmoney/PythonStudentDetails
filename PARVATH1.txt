@@ -1,0 +1,585 @@
+Microsoft Windows [Version 10.0.17763.973]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\User>pip install virtualevn
+Collecting virtualevn
+  ERROR: Could not find a version that satisfies the requirement virtualevn (from versions: none)
+ERROR: No matching distribution found for virtualevn
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\User>pip install flask
+Requirement already satisfied: flask in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (1.1.1)
+Requirement already satisfied: click>=5.1 in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (from flask) (7.0)
+Requirement already satisfied: Jinja2>=2.10.1 in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (from flask) (2.11.0)
+Requirement already satisfied: itsdangerous>=0.24 in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (from flask) (1.1.0)
+Requirement already satisfied: Werkzeug>=0.15 in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (from flask) (0.16.1)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (from Jinja2>=2.10.1->flask) (1.1.1)
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\User>pip install virtualenv
+Collecting virtualenv
+  Downloading https://files.pythonhosted.org/packages/05/f1/2e07e8ca50e047b9cc9ad56cf4291f4e041fa73207d000a095fe478abf84/virtualenv-16.7.9-py2.py3-none-any.whl (3.4MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 3.4MB 656kB/s
+Installing collected packages: virtualenv
+Successfully installed virtualenv-16.7.9
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\User>pip install virtualenvwrapper-win
+Collecting virtualenvwrapper-win
+  Downloading https://files.pythonhosted.org/packages/f5/23/4cba98733b9122219ce67177d745e4984b524b867cf3728eaa807ea21919/virtualenvwrapper-win-1.2.5.tar.gz
+Requirement already satisfied: virtualenv in c:\users\user\appdata\local\programs\python\python38\lib\site-packages (from virtualenvwrapper-win) (16.7.9)
+Installing collected packages: virtualenvwrapper-win
+  Running setup.py install for virtualenvwrapper-win ... done
+Successfully installed virtualenvwrapper-win-1.2.5
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\User>mkvirtualenv Helloworld
+ C:\Users\User\Envs is not a directory, creating
+Using base prefix 'c:\\users\\user\\appdata\\local\\programs\\python\\python38'
+New python executable in C:\Users\User\Envs\Helloworld\Scripts\python.exe
+Installing setuptools, pip, wheel...
+done.
+
+(Helloworld) C:\Users\User>cd dev
+The system cannot find the path specified.
+
+(Helloworld) C:\Users\User>mkdir dev
+
+(Helloworld) C:\Users\User>cd dev
+
+(Helloworld) C:\Users\User\dev>mkdir Helloworld
+
+(Helloworld) C:\Users\User\dev>cd Helloworld
+
+(Helloworld) C:\Users\User\dev\Helloworld>setprojectdir .
+
+    "C:\Users\User\dev\Helloworld" is now the project directory for
+    virtualenv "C:\Users\User\Envs\Helloworld"
+
+    "C:\Users\User\dev\Helloworld" added to
+    C:\Users\User\Envs\Helloworld\Lib\site-packages\virtualenv_path_extensions.pth
+
+(Helloworld) C:\Users\User\dev\Helloworld>pip install flask
+Collecting flask
+  Using cached Flask-1.1.1-py2.py3-none-any.whl (94 kB)
+Collecting Jinja2>=2.10.1
+  Using cached Jinja2-2.11.0-py2.py3-none-any.whl (126 kB)
+Collecting itsdangerous>=0.
+  Using cached itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting Werkzeug>=0.15
+  Using cached Werkzeug-0.16.1-py2.py3-none-any.whl (327 kB)
+Collecting click>=5.1
+  Using cached Click-7.0-py2.py3-none-any.whl (81 kB)
+Collecting MarkupSafe>=0.23
+  Using cached MarkupSafe-1.1.1-cp38-cp38-win_amd64.whl (16 kB)
+Installing collected packages: MarkupSafe, Jinja2, itsdangerous, Werkzeug, click, flask
+Successfully installed Jinja2-2.11.0 MarkupSafe-1.1.1 Werkzeug-0.16.1 click-7.0 flask-1.1.1 itsdangerous-1.1.0
+
+(Helloworld) C:\Users\User\dev\Helloworld>python hello.py
+ * Serving Flask app "hello" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [28/Jan/2020 21:36:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jan/2020 21:36:30] "GET /favicon.ico HTTP/1.1" 404 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python hello.py
+ * Serving Flask app "hello" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [28/Jan/2020 22:07:10] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [28/Jan/2020 22:07:22] "GET /one HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python main.py
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    from app import app
+  File "C:\Users\User\dev\Helloworld\app.py", line 4, in <module>
+    from flask_sqlalchemy import SQLAlchemy
+ModuleNotFoundError: No module named 'flask_sqlalchemy'
+
+(Helloworld) C:\Users\User\dev\Helloworld>python hello.py
+ * Serving Flask app "hello" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 07:35:15] "GET /one HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 07:36:09] "GET /one HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:02:12] "GET /one HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:02:50] "GET /one HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python hello.py
+ * Serving Flask app "hello" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 08:04:17] "GET /one HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:04:23] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [29/Jan/2020 08:04:33] "GET /one HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>pip install flask-sqlalchemy
+Collecting flask-sqlalchemy
+  Downloading Flask_SQLAlchemy-2.4.1-py2.py3-none-any.whl (17 kB)
+Collecting SQLAlchemy>=0.8.0
+  Downloading SQLAlchemy-1.3.13.tar.gz (6.0 MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 6.0 MB 2.2 MB/s
+Requirement already satisfied: Flask>=0.10 in c:\users\user\envs\helloworld\lib\site-packages (from flask-sqlalchemy) (1.1.1)
+Requirement already satisfied: itsdangerous>=0.24 in c:\users\user\envs\helloworld\lib\site-packages (from Flask>=0.10->flask-sqlalchemy) (1.1.0)
+Requirement already satisfied: click>=5.1 in c:\users\user\envs\helloworld\lib\site-packages (from Flask>=0.10->flask-sqlalchemy) (7.0)
+Requirement already satisfied: Werkzeug>=0.15 in c:\users\user\envs\helloworld\lib\site-packages (from Flask>=0.10->flask-sqlalchemy) (0.16.1)
+Requirement already satisfied: Jinja2>=2.10.1 in c:\users\user\envs\helloworld\lib\site-packages (from Flask>=0.10->flask-sqlalchemy) (2.11.0)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\user\envs\helloworld\lib\site-packages (from Jinja2>=2.10.1->Flask>=0.10->flask-sqlalchemy) (1.1.1)
+Building wheels for collected packages: SQLAlchemy
+  Building wheel for SQLAlchemy (setup.py) ... done
+  Created wheel for SQLAlchemy: filename=SQLAlchemy-1.3.13-cp38-cp38-win_amd64.whl size=1171669 sha256=2827ce191731deb70e1b5b967397c494167ef544850e3887e661887365844aed
+  Stored in directory: c:\users\user\appdata\local\pip\cache\wheels\1b\5b\fe\df3abf130f4f66b437ea92eb98814d9d9fa80d70a6ee080b96
+Successfully built SQLAlchemy
+Installing collected packages: SQLAlchemy, flask-sqlalchemy
+Successfully installed SQLAlchemy-1.3.13 flask-sqlalchemy-2.4.1
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\dev\Helloworld\app.py", line 27, in show_all
+    return render_template('show_all.html', students = students.query.all() )
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: show_all.html
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:37:56] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:38:26] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\dev\Helloworld\app.py", line 27, in show_all
+    return render_template('show_all.html', students = students.query.all() )
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: show_all.html
+127.0.0.1 - - [29/Jan/2020 08:38:26] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:38:26] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:38:26] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:38:26] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:38:26] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:42:51] "GET /new HTTP/1.1" 500 -
+127.0.0.1 - - [29/Jan/2020 08:43:34] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [29/Jan/2020 08:43:54] "GET /new HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\dev\Helloworld\app.py", line 42, in new
+    return render_template('new.html')
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: new.html
+127.0.0.1 - - [29/Jan/2020 08:44:10] "GET /new?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:44:10] "GET /new?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:44:10] "GET /new?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:44:10] "GET /new?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:44:10] "GET /new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:44:10] "GET /new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>app.py
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 08:54:51] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:18] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:30] "POST /new HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\dev\Helloworld\app.py", line 35, in new
+    student = students(request.form['name'], request.form['city'],
+TypeError: __init__() takes 1 positional argument but 5 were given
+127.0.0.1 - - [29/Jan/2020 08:55:30] "GET /new?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:30] "GET /new?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:30] "GET /new?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:30] "GET /new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:30] "GET /new?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:55:30] "GET /new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 08:56:59] "GET / HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 09:05:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:05:51] "GET / HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 09:06:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:06:57] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [29/Jan/2020 09:07:13] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:07:23] "POST /new HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\dev\Helloworld\app.py", line 35, in new
+    student = students(request.form['name'], request.form['city'],
+TypeError: __init__() takes 1 positional argument but 5 were given
+127.0.0.1 - - [29/Jan/2020 09:07:23] "GET /new?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:07:23] "GET /new?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:07:23] "GET /new?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:07:23] "GET /new?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:07:23] "GET /new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:07:23] "GET /new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\User\\dev\\Helloworld\\app.py', reloading
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 09:26:17] "POST /new HTTP/1.1" 302 -
+127.0.0.1 - - [29/Jan/2020 09:26:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:26:31] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [29/Jan/2020 09:26:37] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:26:50] "POST /new HTTP/1.1" 302 -
+127.0.0.1 - - [29/Jan/2020 09:26:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:27:06] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [29/Jan/2020 09:27:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:28:43] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:29:23] "POST /new HTTP/1.1" 302 -
+127.0.0.1 - - [29/Jan/2020 09:29:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:29:42] "GET / HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\User\dev\Helloworld\app.py", line 27, in show_all
+    return render_template('show_all.html', students = students.query.all() )
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\User\Envs\Helloworld\Lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: show_all.html
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:37:27] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+
+(Helloworld) C:\Users\User\dev\Helloworld>python app.py
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+C:\Users\User\Envs\Helloworld\lib\site-packages\flask_sqlalchemy\__init__.py:834: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 280-333-163
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Jan/2020 09:40:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:40:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:40:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:40:29] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:40:59] "POST /new HTTP/1.1" 302 -
+127.0.0.1 - - [29/Jan/2020 09:40:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:41:34] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:04] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:26] "POST /new HTTP/1.1" 302 -
+127.0.0.1 - - [29/Jan/2020 09:45:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:45:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:46:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:46:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:46:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:46:39] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:47:16] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:47:24] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:49:00] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:49:02] "POST /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:49:06] "POST /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:49:09] "GET /new HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:50:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jan/2020 09:50:23] "GET / HTTP/1.1" 200 -
+
+---------------------------------
+student project
+----------------
+C:\Users\User\dev\Helloworld>pip install flask-sqlalchemy
+C:\Users\User\dev\Helloworld>python app.py
+
+album project
+-----------------
+(albumDetails) C:\Users\User\devAlbumdetails>pip install flask-sqlalchemy
+(albumDetails) C:\Users\User\devAlbumdetails>pip install flask_table
+(albumDetails) C:\Users\User\devAlbumdetails>pip install Flask-WTF
+(albumDetails) C:\Users\User\devAlbumdetails>python db_creator.py
+(albumDetails) C:\Users\User\devAlbumdetails>python db_setup.py
+
+(albumDetails) C:\Users\User\devAlbumdetails>python forms.py
+(albumDetails) C:\Users\User\devAlbumdetails>python models.py
+(albumDetails) C:\Users\User\devAlbumdetails>python tables.py
+(albumDetails) C:\Users\User\devAlbumdetails>python main.py
